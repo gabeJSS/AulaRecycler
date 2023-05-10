@@ -3,63 +3,71 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="118dp"
-        android:background="#F6DC82">
+        android:layout_height="match_parent"
+        android:background="#F5E979">
 
         <TextView
             android:id="@+id/nome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:text="NOME"
-            android:textSize="34sp"
+            android:layout_marginEnd="20dp"
+            android:text="nome"
+            android:textAlignment="center"
+            android:textColor="#B34040"
+            android:textSize="26sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.247" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/tipo"
+            android:id="@+id/categoria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TIPO"
-            android:textSize="24sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:text="categoria"
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.575" />
+            app:layout_constraintTop_toBottomOf="@+id/nome" />
 
         <TextView
             android:id="@+id/preco"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PREÇO"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="20dp"
+            android:text="preço"
+            android:textColor="#FF0000"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/categoria"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.952"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.575" />
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="427dp"
-            android:layout_height="6dp"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="114dp"
-            tools:srcCompat="#000000" />
-
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nome"
+            app:layout_constraintVertical_bias="1.0"
+            tools:srcCompat="@tools:sample/avatars" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>
